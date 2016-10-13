@@ -1,1 +1,1 @@
-# Beaglebone-CAN-Cape
+# Beaglebone CAN Cape
