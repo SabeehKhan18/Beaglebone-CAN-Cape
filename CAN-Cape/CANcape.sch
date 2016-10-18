@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.001" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -338,6 +338,12 @@
 <segment>
 <pinref part="U$1" gate="G$1" pin="3"/>
 <wire x1="14" y1="83" x2="9" y2="83" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="STANDBY" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="11"/>
+<wire x1="14" y1="71" x2="9" y2="71" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -45,30 +45,20 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
 <library name="CANcape">
 <packages>
-<package name="TB-5.0-PT-3P">
-<wire x1="0" y1="0" x2="15" y2="0" width="0.127" layer="21"/>
-<wire x1="15" y1="0" x2="15" y2="13" width="0.127" layer="21"/>
-<wire x1="15" y1="13" x2="0" y2="13" width="0.127" layer="21"/>
-<wire x1="0" y1="13" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="P$1" x="2.5" y="6" drill="1.25"/>
-<pad name="P$2" x="7.5" y="6" drill="1.25"/>
-<pad name="P$3" x="12.5" y="6" drill="1.25"/>
-<circle x="2" y="2" radius="1" width="0.127" layer="21"/>
-</package>
 <package name="2X23_STACKABLE-HEADERS">
 <pad name="1" x="0" y="0" drill="1.0414" shape="square"/>
 <pad name="3" x="0" y="-2.54" drill="1.0414"/>
@@ -121,18 +111,18 @@
 <wire x1="3.81" y1="-57.15" x2="-1.27" y2="-57.15" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-57.15" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 </package>
+<package name="TB-5.0-PT-3P">
+<wire x1="0" y1="0" x2="15" y2="0" width="0.127" layer="21"/>
+<wire x1="15" y1="0" x2="15" y2="13" width="0.127" layer="21"/>
+<wire x1="15" y1="13" x2="0" y2="13" width="0.127" layer="21"/>
+<wire x1="0" y1="13" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$1" x="2.5" y="6" drill="1.25"/>
+<pad name="P$2" x="7.5" y="6" drill="1.25"/>
+<pad name="P$3" x="12.5" y="6" drill="1.25"/>
+<circle x="2" y="2" radius="1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
-<symbol name="TB-5.0-PT-3P">
-<wire x1="-5" y1="6" x2="5" y2="6" width="0.254" layer="94"/>
-<wire x1="5" y1="6" x2="5" y2="-8" width="0.254" layer="94"/>
-<wire x1="5" y1="-8" x2="-5" y2="-8" width="0.254" layer="94"/>
-<wire x1="-5" y1="-8" x2="-5" y2="6" width="0.254" layer="94"/>
-<pin name="1" x="-10" y="4" length="middle"/>
-<pin name="2" x="-10" y="-1" length="middle"/>
-<pin name="3" x="-10" y="-6" length="middle"/>
-<circle x="2" y="4" radius="1.4142125" width="0.254" layer="94"/>
-</symbol>
 <symbol name="2X23_STACKABLE_HEADERS">
 <wire x1="-8" y1="22" x2="8" y2="22" width="0.254" layer="94"/>
 <wire x1="8" y1="22" x2="8" y2="-48" width="0.254" layer="94"/>
@@ -185,25 +175,18 @@
 <pin name="44" x="13" y="-43" length="middle" rot="R180"/>
 <pin name="46" x="13" y="-46" length="middle" rot="R180"/>
 </symbol>
+<symbol name="TB-5.0-PT-3P">
+<wire x1="-5" y1="6" x2="5" y2="6" width="0.254" layer="94"/>
+<wire x1="5" y1="6" x2="5" y2="-8" width="0.254" layer="94"/>
+<wire x1="5" y1="-8" x2="-5" y2="-8" width="0.254" layer="94"/>
+<wire x1="-5" y1="-8" x2="-5" y2="6" width="0.254" layer="94"/>
+<pin name="1" x="-10" y="4" length="middle"/>
+<pin name="2" x="-10" y="-1" length="middle"/>
+<pin name="3" x="-10" y="-6" length="middle"/>
+<circle x="2" y="4" radius="1.4142125" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="TB-5.0-PT-3P">
-<gates>
-<gate name="G$1" symbol="TB-5.0-PT-3P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TB-5.0-PT-3P">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="2X23_STACKABLE_HEADERS">
 <gates>
 <gate name="G$1" symbol="2X23_STACKABLE_HEADERS" x="0" y="10.16"/>
@@ -264,6 +247,23 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="TB-5.0-PT-3P">
+<gates>
+<gate name="G$1" symbol="TB-5.0-PT-3P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TB-5.0-PT-3P">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -276,22 +276,70 @@
 </class>
 </classes>
 <parts>
-<part name="U$1" library="CANcape" deviceset="TB-5.0-PT-3P" device=""/>
-<part name="P9" library="CANcape" deviceset="2X23_STACKABLE_HEADERS" device=""/>
-<part name="P8" library="CANcape" deviceset="2X23_STACKABLE_HEADERS" device=""/>
+<part name="U$1" library="CANcape" deviceset="2X23_STACKABLE_HEADERS" device=""/>
+<part name="U$2" library="CANcape" deviceset="2X23_STACKABLE_HEADERS" device=""/>
+<part name="U$3" library="CANcape" deviceset="TB-5.0-PT-3P" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="63.5" y="99.06" rot="R90"/>
-<instance part="P9" gate="G$1" x="7.62" y="55.88"/>
-<instance part="P8" gate="G$1" x="116.84" y="55.88"/>
+<instance part="U$1" gate="G$1" x="27" y="66"/>
+<instance part="U$2" gate="G$1" x="107" y="66"/>
+<instance part="U$3" gate="G$1" x="67" y="105" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="DCAN1_RX" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="24"/>
+<wire x1="40" y1="53" x2="45" y2="53" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DCAN1_TX" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="26"/>
+<wire x1="40" y1="50" x2="45" y2="50" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CANH" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="1"/>
+<wire x1="63" y1="95" x2="63" y2="90" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CANL" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="2"/>
+<wire x1="68" y1="95" x2="68" y2="90" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="14" y1="86" x2="9" y2="86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="94" y1="86" x2="90" y2="86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<wire x1="120" y1="86" x2="123" y2="86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="40" y1="86" x2="44" y2="86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="3"/>
+<wire x1="14" y1="83" x2="9" y2="83" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
