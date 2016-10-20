@@ -69,21 +69,15 @@ Link to product: http://www.digikey.com/product-detail/en/cw-industries/GF-123-0
 <pad name="P$1" x="3.6322" y="5.08" drill="1.524" shape="square"/>
 <pad name="P$2" x="8.2296" y="5.08" drill="1.524" shape="square" rot="R90"/>
 </package>
-<package name="SN65HVD230">
-<wire x1="1.27" y1="0" x2="1.27" y2="2.54" width="0.127" layer="21"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="6.35" width="0.127" layer="21"/>
-<wire x1="1.27" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
-<wire x1="7.62" y1="6.35" x2="7.62" y2="0" width="0.127" layer="21"/>
-<wire x1="7.62" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
-<smd name="P$1" x="2.54" y="1.27" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$2" x="3.81" y="1.27" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$3" x="5.08" y="1.27" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$4" x="6.35" y="1.27" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$5" x="6.35" y="5.08" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$6" x="5.08" y="5.08" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$7" x="3.81" y="5.08" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$8" x="2.54" y="5.08" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<package name="SN65HVD320">
+<smd name="P$1" x="0" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$2" x="1.27" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$3" x="2.54" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$4" x="3.81" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$5" x="3.81" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$6" x="2.54" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$7" x="1.27" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$8" x="0" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -100,7 +94,7 @@ Part: http://www.digikey.com/product-detail/en/cw-industries/GF-123-0054/CWI333-
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 </symbol>
-<symbol name="SN65HVD230">
+<symbol name="SN65HVD320">
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
@@ -109,19 +103,19 @@ Part: http://www.digikey.com/product-detail/en/cw-industries/GF-123-0054/CWI333-
 <pin name="CANH" x="10.16" y="2.54" length="middle"/>
 <pin name="CANL" x="10.16" y="-2.54" length="middle"/>
 <pin name="VREF" x="10.16" y="-7.62" length="middle"/>
-<pin name="D" x="-10.16" y="7.62" length="middle" rot="R180"/>
-<pin name="GND" x="-10.16" y="2.54" length="middle" rot="R180"/>
-<pin name="VCC" x="-10.16" y="-2.54" length="middle" rot="R180"/>
 <pin name="R" x="-10.16" y="-7.62" length="middle" rot="R180"/>
+<pin name="VCC" x="-10.16" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="D" x="-10.16" y="7.62" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SN65HVD230">
+<deviceset name="SN65HVD320">
 <gates>
-<gate name="G$1" symbol="SN65HVD230" x="0" y="0"/>
+<gate name="G$1" symbol="SN65HVD320" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SN65HVD230">
+<device name="" package="SN65HVD320">
 <connects>
 <connect gate="G$1" pin="CANH" pad="P$7"/>
 <connect gate="G$1" pin="CANL" pad="P$6"/>
