@@ -266,66 +266,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="SPST-switch">
-<packages>
-<package name="SN65HVD230">
-<wire x1="1.27" y1="0" x2="1.27" y2="2.54" width="0.127" layer="21"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="6.35" width="0.127" layer="21"/>
-<wire x1="1.27" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
-<wire x1="7.62" y1="6.35" x2="7.62" y2="0" width="0.127" layer="21"/>
-<wire x1="7.62" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
-<smd name="P$1" x="2.54" y="1.27" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$2" x="3.81" y="1.27" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$3" x="5.08" y="1.27" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$4" x="6.35" y="1.27" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$5" x="6.35" y="5.08" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$6" x="5.08" y="5.08" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$7" x="3.81" y="5.08" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<smd name="P$8" x="2.54" y="5.08" dx="1.778" dy="0.762" layer="1" rot="R270"/>
-<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SN65HVD230">
-<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="RS" x="10.16" y="7.62" length="middle"/>
-<pin name="CANH" x="10.16" y="2.54" length="middle"/>
-<pin name="CANL" x="10.16" y="-2.54" length="middle"/>
-<pin name="VREF" x="10.16" y="-7.62" length="middle"/>
-<pin name="D" x="-10.16" y="7.62" length="middle" rot="R180"/>
-<pin name="GND" x="-10.16" y="2.54" length="middle" rot="R180"/>
-<pin name="VCC" x="-10.16" y="-2.54" length="middle" rot="R180"/>
-<pin name="R" x="-10.16" y="-7.62" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SN65HVD230">
-<gates>
-<gate name="G$1" symbol="SN65HVD230" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SN65HVD230">
-<connects>
-<connect gate="G$1" pin="CANH" pad="P$7"/>
-<connect gate="G$1" pin="CANL" pad="P$6"/>
-<connect gate="G$1" pin="D" pad="P$1"/>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="R" pad="P$4"/>
-<connect gate="G$1" pin="RS" pad="P$8"/>
-<connect gate="G$1" pin="VCC" pad="P$3"/>
-<connect gate="G$1" pin="VREF" pad="P$5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -339,7 +279,6 @@
 <part name="U$1" library="CANcape" deviceset="2X23_STACKABLE_HEADERS" device=""/>
 <part name="U$2" library="CANcape" deviceset="2X23_STACKABLE_HEADERS" device=""/>
 <part name="U$3" library="CANcape" deviceset="TB-5.0-PT-3P" device=""/>
-<part name="U$4" library="SPST-switch" deviceset="SN65HVD230" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -349,7 +288,6 @@
 <instance part="U$1" gate="G$1" x="27" y="66"/>
 <instance part="U$2" gate="G$1" x="107" y="66"/>
 <instance part="U$3" gate="G$1" x="67" y="105" rot="R90"/>
-<instance part="U$4" gate="G$1" x="66.923" y="78.007"/>
 </instances>
 <busses>
 </busses>

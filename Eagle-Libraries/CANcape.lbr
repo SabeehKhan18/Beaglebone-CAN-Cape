@@ -131,6 +131,15 @@
 <wire x1="3.81" y1="-57.15" x2="-1.27" y2="-57.15" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-57.15" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 </package>
+<package name="1X3_HEADER">
+<pad name="P$1" x="-2.54" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="0.8"/>
+<pad name="P$3" x="2.54" y="0" drill="0.8"/>
+<wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CLAMP_CONN">
@@ -207,6 +216,16 @@
 <pin name="42" x="13" y="-40" length="middle" rot="R180"/>
 <pin name="44" x="13" y="-43" length="middle" rot="R180"/>
 <pin name="46" x="13" y="-46" length="middle" rot="R180"/>
+</symbol>
+<symbol name="1X3_HEADER">
+<wire x1="-3" y1="7" x2="3" y2="7" width="0.254" layer="94"/>
+<wire x1="3" y1="7" x2="3" y2="-7" width="0.254" layer="94"/>
+<wire x1="3" y1="-7" x2="-3" y2="-7" width="0.254" layer="94"/>
+<wire x1="-3" y1="-7" x2="-3" y2="7" width="0.254" layer="94"/>
+<pin name="1" x="-8" y="5" length="middle"/>
+<pin name="2" x="-8" y="0" length="middle"/>
+<pin name="3" x="-8" y="-5" length="middle"/>
+<circle x="0" y="5" radius="1.4142125" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -300,6 +319,23 @@
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X3_HEADER">
+<gates>
+<gate name="G$1" symbol="1X3_HEADER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X3_HEADER">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
