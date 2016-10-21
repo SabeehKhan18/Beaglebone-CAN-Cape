@@ -1529,7 +1529,7 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="2"/>
 <contactref element="U$7" pad="P$3"/>
 <contactref element="U$5" pad="P$2"/>
-<polygon width="0.3048" layer="16">
+<polygon width="0.3048" layer="16" isolate="0.3048">
 <vertex x="2.54" y="74.93"/>
 <vertex x="58.42" y="74.93"/>
 <vertex x="58.42" y="0"/>
