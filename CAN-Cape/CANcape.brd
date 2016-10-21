@@ -60,8 +60,12 @@
 <plain>
 <wire x1="1.27" y1="-1.27" x2="59.36" y2="-1.27" width="0" layer="20"/>
 <wire x1="59.36" y1="-1.27" x2="59.36" y2="76.19" width="0" layer="20"/>
-<wire x1="59.36" y1="76.19" x2="1.27" y2="76.19" width="0" layer="20"/>
 <wire x1="1.27" y1="76.19" x2="1.27" y2="-1.27" width="0" layer="20"/>
+<wire x1="1.27" y1="76.2" x2="13.97" y2="76.2" width="0" layer="20"/>
+<wire x1="13.97" y1="76.2" x2="13.97" y2="71.12" width="0" layer="20"/>
+<wire x1="13.97" y1="71.12" x2="46.99" y2="71.12" width="0" layer="20"/>
+<wire x1="46.99" y1="71.12" x2="46.99" y2="76.2" width="0" layer="20"/>
+<wire x1="46.99" y1="76.2" x2="59.69" y2="76.2" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="CANcape">
@@ -1522,11 +1526,23 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="2"/>
 <contactref element="U$7" pad="P$3"/>
 <contactref element="U$5" pad="P$2"/>
-<polygon width="0.3048" layer="16" isolate="0.4064">
-<vertex x="2.54" y="74.93"/>
-<vertex x="58.42" y="74.93"/>
+<polygon width="0" layer="16" isolate="0.3048">
+<vertex x="2.54" y="69.85"/>
+<vertex x="58.42" y="69.85"/>
 <vertex x="58.42" y="0"/>
 <vertex x="2.54" y="0"/>
+</polygon>
+<polygon width="0" layer="16" isolate="0.3048">
+<vertex x="2.54" y="69.85"/>
+<vertex x="2.54" y="74.93"/>
+<vertex x="12.7" y="74.93"/>
+<vertex x="12.7" y="69.85"/>
+</polygon>
+<polygon width="0" layer="16" isolate="0.3048">
+<vertex x="48.26" y="69.85"/>
+<vertex x="48.26" y="74.93"/>
+<vertex x="58.42" y="74.93"/>
+<vertex x="58.42" y="69.85"/>
 </polygon>
 </signal>
 <signal name="3.3V">
