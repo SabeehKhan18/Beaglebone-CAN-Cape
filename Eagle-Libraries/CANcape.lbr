@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -155,6 +155,27 @@
 <wire x1="22.86" y1="7.62" x2="-2.54" y2="7.62" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="7.62" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
 </package>
+<package name="SOIC_BREAKOUT">
+<pad name="P$1" x="-3.81" y="3.81" drill="1.0414" shape="square"/>
+<pad name="P$2" x="-3.81" y="1.27" drill="1.0414"/>
+<pad name="P$3" x="-3.81" y="-1.27" drill="1.0414"/>
+<pad name="P$4" x="-3.81" y="-3.81" drill="1.0414"/>
+<pad name="P$5" x="3.81" y="-3.81" drill="1.0414"/>
+<pad name="P$6" x="3.81" y="-1.27" drill="1.0414"/>
+<pad name="P$7" x="3.81" y="1.27" drill="1.0414"/>
+<pad name="P$8" x="3.81" y="3.81" drill="1.0414"/>
+</package>
+<package name="SN65HVD320">
+<smd name="P$1" x="0" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$2" x="1.27" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$3" x="2.54" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$4" x="3.81" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$5" x="3.81" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$6" x="2.54" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$7" x="1.27" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$8" x="0" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<circle x="0" y="1.27" radius="0.25" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CLAMP_CONN">
@@ -256,6 +277,20 @@
 <pin name="7" x="-8" y="-4" length="middle"/>
 <pin name="8" x="-8" y="-6" length="middle"/>
 <pin name="9" x="-8" y="-8" length="middle"/>
+</symbol>
+<symbol name="SOIC_BREAKOUT">
+<wire x1="-8" y1="7" x2="-8" y2="-6" width="0.254" layer="94"/>
+<wire x1="-8" y1="-6" x2="8" y2="-6" width="0.254" layer="94"/>
+<wire x1="8" y1="-6" x2="8" y2="7" width="0.254" layer="94"/>
+<wire x1="8" y1="7" x2="-8" y2="7" width="0.254" layer="94"/>
+<pin name="D" x="-13" y="5" length="middle"/>
+<pin name="GND" x="-13" y="2" length="middle"/>
+<pin name="VCC" x="-13" y="-1" length="middle"/>
+<pin name="R" x="-13" y="-4" length="middle"/>
+<pin name="RS" x="13" y="5" length="middle" rot="R180"/>
+<pin name="CANH" x="13" y="2" length="middle" rot="R180"/>
+<pin name="CANL" x="13" y="-1" length="middle" rot="R180"/>
+<pin name="VREF" x="13" y="-4" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -389,6 +424,28 @@
 <connect gate="G$1" pin="CANH" pad="P$3"/>
 <connect gate="G$1" pin="CANL" pad="P$5"/>
 <connect gate="G$1" pin="SGND" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SOIC_BREAKOUT">
+<gates>
+<gate name="G$1" symbol="SOIC_BREAKOUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC_BREAKOUT">
+<connects>
+<connect gate="G$1" pin="CANH" pad="P$7"/>
+<connect gate="G$1" pin="CANL" pad="P$6"/>
+<connect gate="G$1" pin="D" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="R" pad="P$8"/>
+<connect gate="G$1" pin="RS" pad="P$4"/>
+<connect gate="G$1" pin="VCC" pad="P$3"/>
+<connect gate="G$1" pin="VREF" pad="P$5"/>
 </connects>
 <technologies>
 <technology name=""/>

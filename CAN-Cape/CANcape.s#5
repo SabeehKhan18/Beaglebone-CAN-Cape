@@ -112,30 +112,6 @@
 <wire x1="3.81" y1="-57.15" x2="-1.27" y2="-57.15" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-57.15" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 </package>
-<package name="1X3_HEADER">
-<pad name="P$1" x="-2.54" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="0" y="0" drill="0.8"/>
-<pad name="P$3" x="2.54" y="0" drill="0.8"/>
-<wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
-</package>
-<package name="DB9_BREAKOUT">
-<pad name="P$1" x="0" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="2.54" y="0" drill="0.8"/>
-<pad name="P$3" x="5.08" y="0" drill="0.8"/>
-<pad name="P$4" x="7.62" y="0" drill="0.8"/>
-<pad name="P$5" x="10.16" y="0" drill="0.8"/>
-<pad name="P$6" x="12.7" y="0" drill="0.8"/>
-<pad name="P$7" x="15.24" y="0" drill="0.8"/>
-<pad name="P$8" x="17.78" y="0" drill="0.8"/>
-<pad name="P$9" x="20.32" y="0" drill="0.8"/>
-<wire x1="-2.54" y1="-2.54" x2="22.86" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="22.86" y1="-2.54" x2="22.86" y2="7.62" width="0.127" layer="21"/>
-<wire x1="22.86" y1="7.62" x2="-2.54" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
-</package>
 <package name="TB-5.0-PT-3P">
 <wire x1="0" y1="0" x2="15" y2="0" width="0.127" layer="21"/>
 <wire x1="15" y1="0" x2="15" y2="13" width="0.127" layer="21"/>
@@ -145,6 +121,30 @@
 <pad name="P$2" x="7.5" y="6" drill="1.5"/>
 <pad name="P$3" x="12.5" y="6" drill="1.5"/>
 <circle x="2" y="2" radius="1" width="0.127" layer="21"/>
+</package>
+<package name="DB9_BREAKOUT">
+<pad name="P$1" x="0" y="0" drill="1.0414" shape="square"/>
+<pad name="P$2" x="2.54" y="0" drill="1.0414"/>
+<pad name="P$3" x="5.08" y="0" drill="1.0414"/>
+<pad name="P$4" x="7.62" y="0" drill="1.0414"/>
+<pad name="P$5" x="10.16" y="0" drill="1.0414"/>
+<pad name="P$6" x="12.7" y="0" drill="1.0414"/>
+<pad name="P$7" x="15.24" y="0" drill="1.0414"/>
+<pad name="P$8" x="17.78" y="0" drill="1.0414"/>
+<pad name="P$9" x="20.32" y="0" drill="1.0414"/>
+<wire x1="-2.54" y1="-2.54" x2="22.86" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="22.86" y1="-2.54" x2="22.86" y2="7.62" width="0.127" layer="21"/>
+<wire x1="22.86" y1="7.62" x2="-2.54" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
+</package>
+<package name="1X3_HEADER">
+<pad name="P$1" x="-2.54" y="0" drill="1.0414" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="1.0414"/>
+<pad name="P$3" x="2.54" y="0" drill="1.0414"/>
+<wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -200,15 +200,15 @@
 <pin name="44" x="13" y="-43" length="middle" rot="R180"/>
 <pin name="46" x="13" y="-46" length="middle" rot="R180"/>
 </symbol>
-<symbol name="1X3_HEADER">
-<wire x1="-3" y1="7" x2="3" y2="7" width="0.254" layer="94"/>
-<wire x1="3" y1="7" x2="3" y2="-7" width="0.254" layer="94"/>
-<wire x1="3" y1="-7" x2="-3" y2="-7" width="0.254" layer="94"/>
-<wire x1="-3" y1="-7" x2="-3" y2="7" width="0.254" layer="94"/>
-<pin name="1" x="-8" y="5" length="middle"/>
-<pin name="2" x="-8" y="0" length="middle"/>
-<pin name="3" x="-8" y="-5" length="middle"/>
-<circle x="0" y="5" radius="1.4142125" width="0.254" layer="94"/>
+<symbol name="TB-5.0-PT-3P">
+<wire x1="-5" y1="6" x2="5" y2="6" width="0.254" layer="94"/>
+<wire x1="5" y1="6" x2="5" y2="-8" width="0.254" layer="94"/>
+<wire x1="5" y1="-8" x2="-5" y2="-8" width="0.254" layer="94"/>
+<wire x1="-5" y1="-8" x2="-5" y2="6" width="0.254" layer="94"/>
+<pin name="1" x="-10" y="4" length="middle"/>
+<pin name="2" x="-10" y="-1" length="middle"/>
+<pin name="3" x="-10" y="-6" length="middle"/>
+<circle x="2" y="4" radius="1.4142125" width="0.254" layer="94"/>
 </symbol>
 <symbol name="DB9_BREAKOUT">
 <wire x1="-3" y1="10" x2="-3" y2="-10" width="0.254" layer="94"/>
@@ -225,15 +225,15 @@
 <pin name="8" x="-8" y="-6" length="middle"/>
 <pin name="9" x="-8" y="-8" length="middle"/>
 </symbol>
-<symbol name="TB-5.0-PT-3P">
-<wire x1="-5" y1="6" x2="5" y2="6" width="0.254" layer="94"/>
-<wire x1="5" y1="6" x2="5" y2="-8" width="0.254" layer="94"/>
-<wire x1="5" y1="-8" x2="-5" y2="-8" width="0.254" layer="94"/>
-<wire x1="-5" y1="-8" x2="-5" y2="6" width="0.254" layer="94"/>
-<pin name="1" x="-10" y="4" length="middle"/>
-<pin name="2" x="-10" y="-1" length="middle"/>
-<pin name="3" x="-10" y="-6" length="middle"/>
-<circle x="2" y="4" radius="1.4142125" width="0.254" layer="94"/>
+<symbol name="1X3_HEADER">
+<wire x1="-3" y1="7" x2="3" y2="7" width="0.254" layer="94"/>
+<wire x1="3" y1="7" x2="3" y2="-7" width="0.254" layer="94"/>
+<wire x1="3" y1="-7" x2="-3" y2="-7" width="0.254" layer="94"/>
+<wire x1="-3" y1="-7" x2="-3" y2="7" width="0.254" layer="94"/>
+<pin name="1" x="-8" y="5" length="middle"/>
+<pin name="2" x="-8" y="0" length="middle"/>
+<pin name="3" x="-8" y="-5" length="middle"/>
+<circle x="0" y="5" radius="1.4142125" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -297,12 +297,12 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="1X3_HEADER">
+<deviceset name="TB-5.0-PT-3P">
 <gates>
-<gate name="G$1" symbol="1X3_HEADER" x="0" y="0"/>
+<gate name="G$1" symbol="TB-5.0-PT-3P" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1X3_HEADER">
+<device name="" package="TB-5.0-PT-3P">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -337,12 +337,12 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="TB-5.0-PT-3P">
+<deviceset name="1X3_HEADER">
 <gates>
-<gate name="G$1" symbol="TB-5.0-PT-3P" x="0" y="0"/>
+<gate name="G$1" symbol="1X3_HEADER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TB-5.0-PT-3P">
+<device name="" package="1X3_HEADER">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -3850,12 +3850,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <parts>
 <part name="U$1" library="CANcape" deviceset="2X23_STACKABLE_HEADERS" device=""/>
 <part name="U$2" library="CANcape" deviceset="2X23_STACKABLE_HEADERS" device=""/>
-<part name="U$4" library="CANcape" deviceset="1X3_HEADER" device=""/>
-<part name="U$6" library="CANcape" deviceset="DB9_BREAKOUT" device=""/>
-<part name="U$7" library="CANcape" deviceset="1X3_HEADER" device=""/>
 <part name="U$5" library="SPST-switch" deviceset="SN65HVD320" device=""/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="0207/15" value="120"/>
 <part name="U$3" library="CANcape" deviceset="TB-5.0-PT-3P" device=""/>
+<part name="U$6" library="CANcape" deviceset="DB9_BREAKOUT" device=""/>
+<part name="U$4" library="CANcape" deviceset="1X3_HEADER" device=""/>
+<part name="U$7" library="CANcape" deviceset="1X3_HEADER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3864,12 +3864,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instances>
 <instance part="U$1" gate="G$1" x="27" y="66"/>
 <instance part="U$2" gate="G$1" x="107" y="66"/>
-<instance part="U$4" gate="G$1" x="112" y="100"/>
-<instance part="U$6" gate="G$1" x="153" y="99"/>
-<instance part="U$7" gate="G$1" x="153" y="77"/>
 <instance part="U$5" gate="G$1" x="28" y="101"/>
 <instance part="R1" gate="G$1" x="86" y="93"/>
 <instance part="U$3" gate="G$1" x="67" y="104" rot="R90"/>
+<instance part="U$6" gate="G$1" x="153" y="99"/>
+<instance part="U$4" gate="G$1" x="112" y="100"/>
+<instance part="U$7" gate="G$1" x="152" y="77"/>
 </instances>
 <busses>
 </busses>
@@ -3902,16 +3902,16 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="63" y="94"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="2"/>
 <wire x1="104" y1="100" x2="100" y2="100" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="43" y1="103" x2="47" y2="103" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="CANH"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="CANH"/>
 <wire x1="145" y1="103" x2="139" y2="103" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="CANH"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -3926,8 +3926,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="U$5" gate="G$1" pin="CANL"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="CANL"/>
 <wire x1="145" y1="99" x2="139" y2="99" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="CANL"/>
 </segment>
 <segment>
 <wire x1="81" y1="93" x2="80.92" y2="93" width="0.1524" layer="91"/>
@@ -3958,8 +3958,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="U$5" gate="G$1" pin="GND"/>
 </segment>
 <segment>
+<wire x1="145" y1="72" x2="144" y2="72" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="3"/>
-<wire x1="145" y1="72" x2="138" y2="72" width="0.1524" layer="91"/>
+<wire x1="144" y1="72" x2="138" y2="72" width="0.1524" layer="91"/>
+<junction x="144" y="72"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -3991,20 +3993,22 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="91" y1="93" x2="91.08" y2="93" width="0.1524" layer="91"/>
 <wire x1="91.08" y1="93" x2="97" y2="93" width="0.1524" layer="91"/>
 <wire x1="97" y1="93" x2="97" y2="95" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="3"/>
 <wire x1="97" y1="95" x2="104" y2="95" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <junction x="91.08" y="93"/>
+<pinref part="U$4" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="SGND" class="0">
 <segment>
+<wire x1="145" y1="77" x2="144" y2="77" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="2"/>
-<wire x1="145" y1="77" x2="138" y2="77" width="0.1524" layer="91"/>
+<wire x1="144" y1="77" x2="138" y2="77" width="0.1524" layer="91"/>
+<junction x="144" y="77"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="SGND"/>
 <wire x1="145" y1="107" x2="139" y2="107" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="SGND"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="3"/>

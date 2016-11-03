@@ -74,9 +74,9 @@
 <wire x1="15" y1="0" x2="15" y2="13" width="0.127" layer="21"/>
 <wire x1="15" y1="13" x2="0" y2="13" width="0.127" layer="21"/>
 <wire x1="0" y1="13" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="P$1" x="2.5" y="6" drill="1.25"/>
-<pad name="P$2" x="7.5" y="6" drill="1.25"/>
-<pad name="P$3" x="12.5" y="6" drill="1.25"/>
+<pad name="P$1" x="2.5" y="6" drill="1.5" shape="square"/>
+<pad name="P$2" x="7.5" y="6" drill="1.5"/>
+<pad name="P$3" x="12.5" y="6" drill="1.5"/>
 <circle x="2" y="2" radius="1" width="0.127" layer="21"/>
 </package>
 <package name="2X23_STACKABLE-HEADERS">
@@ -132,13 +132,41 @@
 <wire x1="-1.27" y1="-57.15" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 </package>
 <package name="1X3_HEADER">
-<pad name="P$1" x="-2.54" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="0" y="0" drill="0.8"/>
-<pad name="P$3" x="2.54" y="0" drill="0.8"/>
+<pad name="P$1" x="-2.54" y="0" drill="1.0414" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="1.0414"/>
+<pad name="P$3" x="2.54" y="0" drill="1.0414"/>
 <wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
 <wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
+</package>
+<package name="DB9_BREAKOUT">
+<pad name="P$1" x="0" y="0" drill="1.0414" shape="square"/>
+<pad name="P$2" x="2.54" y="0" drill="1.0414"/>
+<pad name="P$3" x="5.08" y="0" drill="1.0414"/>
+<pad name="P$4" x="7.62" y="0" drill="1.0414"/>
+<pad name="P$5" x="10.16" y="0" drill="1.0414"/>
+<pad name="P$6" x="12.7" y="0" drill="1.0414"/>
+<pad name="P$7" x="15.24" y="0" drill="1.0414"/>
+<pad name="P$8" x="17.78" y="0" drill="1.0414"/>
+<pad name="P$9" x="20.32" y="0" drill="1.0414"/>
+<wire x1="-2.54" y1="-2.54" x2="22.86" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="22.86" y1="-2.54" x2="22.86" y2="7.62" width="0.127" layer="21"/>
+<wire x1="22.86" y1="7.62" x2="-2.54" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
+</package>
+<package name="SOIC_BREAKOUT">
+</package>
+<package name="SN65HVD320">
+<smd name="P$1" x="0" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$2" x="1.27" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$3" x="2.54" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$4" x="3.81" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$5" x="3.81" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$6" x="2.54" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$7" x="1.27" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$8" x="0" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<circle x="0" y="1.27" radius="0.25" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -232,7 +260,7 @@
 <wire x1="-3" y1="-10" x2="6" y2="-10" width="0.254" layer="94"/>
 <wire x1="6" y1="-10" x2="6" y2="10" width="0.254" layer="94"/>
 <wire x1="6" y1="10" x2="-3" y2="10" width="0.254" layer="94"/>
-<pin name="1" x="-8" y="8" length="middle"/>
+<pin name="SGND" x="-8" y="8" length="middle"/>
 <pin name="2" x="-8" y="6" length="middle"/>
 <pin name="CANH" x="-8" y="4" length="middle"/>
 <pin name="4" x="-8" y="2" length="middle"/>
@@ -241,6 +269,20 @@
 <pin name="7" x="-8" y="-4" length="middle"/>
 <pin name="8" x="-8" y="-6" length="middle"/>
 <pin name="9" x="-8" y="-8" length="middle"/>
+</symbol>
+<symbol name="SOIC_BREAKOUT">
+<wire x1="-8" y1="7" x2="-8" y2="-6" width="0.254" layer="94"/>
+<wire x1="-8" y1="-6" x2="8" y2="-6" width="0.254" layer="94"/>
+<wire x1="8" y1="-6" x2="8" y2="7" width="0.254" layer="94"/>
+<wire x1="8" y1="7" x2="-8" y2="7" width="0.254" layer="94"/>
+<pin name="D" x="-13" y="5" length="middle"/>
+<pin name="GND" x="-13" y="2" length="middle"/>
+<pin name="VCC" x="-13" y="-1" length="middle"/>
+<pin name="R" x="-13" y="-4" length="middle"/>
+<pin name="RS" x="13" y="5" length="middle" rot="R180"/>
+<pin name="CANH" x="13" y="2" length="middle" rot="R180"/>
+<pin name="CANL" x="13" y="-1" length="middle" rot="R180"/>
+<pin name="VREF" x="13" y="-4" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -351,6 +393,29 @@
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
 <connect gate="G$1" pin="3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DB9_BREAKOUT">
+<gates>
+<gate name="G$1" symbol="DB9_BREAKOUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DB9_BREAKOUT">
+<connects>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+<connect gate="G$1" pin="8" pad="P$8"/>
+<connect gate="G$1" pin="9" pad="P$9"/>
+<connect gate="G$1" pin="CANH" pad="P$3"/>
+<connect gate="G$1" pin="CANL" pad="P$5"/>
+<connect gate="G$1" pin="SGND" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
