@@ -5,5 +5,7 @@ Installation guide:
 Be sure you have disabled the HDMI in /boot/uEnv.txt by uncommenting:
 dtb=am335x-boneblack-emmc-overlay.dtb
 
-Also install linux can-utils:\n
+Also install linux can-utils:
+<p>
 `apt-get install can-utils`
+</p>
