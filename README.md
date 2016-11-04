@@ -17,4 +17,4 @@ Begin setup by sourcing the setup bash file:
 
 You can now grab CAN data by:
 
-`candump can1'
+`candump can1`
