@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -117,9 +117,9 @@
 <wire x1="15" y1="0" x2="15" y2="13" width="0.127" layer="21"/>
 <wire x1="15" y1="13" x2="0" y2="13" width="0.127" layer="21"/>
 <wire x1="0" y1="13" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="P$1" x="2.5" y="6" drill="1.25"/>
-<pad name="P$2" x="7.5" y="6" drill="1.25"/>
-<pad name="P$3" x="12.5" y="6" drill="1.25"/>
+<pad name="P$1" x="2.5" y="6" drill="1.5" shape="square"/>
+<pad name="P$2" x="7.5" y="6" drill="1.5"/>
+<pad name="P$3" x="12.5" y="6" drill="1.5"/>
 <circle x="2" y="2" radius="1" width="0.127" layer="21"/>
 </package>
 <package name="DB9_BREAKOUT">

@@ -3979,6 +3979,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="U$8" gate="G$1" pin="1"/>
 <wire x1="144" y1="62" x2="139" y2="62" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="3"/>
+<wire x1="14" y1="83" x2="9" y2="83" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="STANDBY" class="0">
 <segment>

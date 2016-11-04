@@ -260,18 +260,18 @@
 <pin name="9" x="-8" y="-8" length="middle"/>
 </symbol>
 <symbol name="SOIC_BREAKOUT">
-<wire x1="-6" y1="4" x2="-6" y2="-8" width="0.254" layer="94"/>
-<wire x1="-6" y1="-8" x2="10" y2="-8" width="0.254" layer="94"/>
-<wire x1="10" y1="-8" x2="10" y2="4" width="0.254" layer="94"/>
-<wire x1="10" y1="4" x2="-6" y2="4" width="0.254" layer="94"/>
-<pin name="D" x="-11" y="3" length="middle"/>
-<pin name="GND" x="-11" y="0" length="middle"/>
-<pin name="VCC" x="-11" y="-3" length="middle"/>
-<pin name="R" x="-11" y="-6" length="middle"/>
-<pin name="RS" x="15" y="3" length="middle" rot="R180"/>
-<pin name="CANH" x="15" y="0" length="middle" rot="R180"/>
-<pin name="CANL" x="15" y="-3" length="middle" rot="R180"/>
-<pin name="VREF" x="15" y="-6" length="middle" rot="R180"/>
+<wire x1="-8" y1="6" x2="-8" y2="-6" width="0.254" layer="94"/>
+<wire x1="-8" y1="-6" x2="8" y2="-6" width="0.254" layer="94"/>
+<wire x1="8" y1="-6" x2="8" y2="6" width="0.254" layer="94"/>
+<wire x1="8" y1="6" x2="-8" y2="6" width="0.254" layer="94"/>
+<pin name="D" x="-13" y="5" length="middle"/>
+<pin name="GND" x="-13" y="2" length="middle"/>
+<pin name="VCC" x="-13" y="-1" length="middle"/>
+<pin name="R" x="-13" y="-4" length="middle"/>
+<pin name="RS" x="13" y="5" length="middle" rot="R180"/>
+<pin name="CANH" x="13" y="2" length="middle" rot="R180"/>
+<pin name="CANL" x="13" y="-1" length="middle" rot="R180"/>
+<pin name="VREF" x="13" y="-4" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>

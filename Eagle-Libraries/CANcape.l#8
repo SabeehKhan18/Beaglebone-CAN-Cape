@@ -157,6 +157,17 @@
 </package>
 <package name="SOIC_BREAKOUT">
 </package>
+<package name="SN65HVD320">
+<smd name="P$1" x="0" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$2" x="1.27" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$3" x="2.54" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$4" x="3.81" y="0" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$5" x="3.81" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$6" x="2.54" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$7" x="1.27" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<smd name="P$8" x="0" y="6.2" dx="1.6764" dy="0.8128" layer="1" roundness="100" rot="R90"/>
+<circle x="0" y="1.27" radius="0.25" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CLAMP_CONN">
@@ -260,10 +271,10 @@
 <pin name="9" x="-8" y="-8" length="middle"/>
 </symbol>
 <symbol name="SOIC_BREAKOUT">
-<wire x1="-8" y1="6" x2="-8" y2="-6" width="0.254" layer="94"/>
+<wire x1="-8" y1="7" x2="-8" y2="-6" width="0.254" layer="94"/>
 <wire x1="-8" y1="-6" x2="8" y2="-6" width="0.254" layer="94"/>
-<wire x1="8" y1="-6" x2="8" y2="6" width="0.254" layer="94"/>
-<wire x1="8" y1="6" x2="-8" y2="6" width="0.254" layer="94"/>
+<wire x1="8" y1="-6" x2="8" y2="7" width="0.254" layer="94"/>
+<wire x1="8" y1="7" x2="-8" y2="7" width="0.254" layer="94"/>
 <pin name="D" x="-13" y="5" length="middle"/>
 <pin name="GND" x="-13" y="2" length="middle"/>
 <pin name="VCC" x="-13" y="-1" length="middle"/>

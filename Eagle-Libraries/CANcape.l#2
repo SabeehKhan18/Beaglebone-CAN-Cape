@@ -436,7 +436,17 @@
 <gate name="G$1" symbol="SOIC_BREAKOUT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="SOIC_BREAKOUT">
+<connects>
+<connect gate="G$1" pin="CANH" pad="P$7"/>
+<connect gate="G$1" pin="CANL" pad="P$6"/>
+<connect gate="G$1" pin="D" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="R" pad="P$4"/>
+<connect gate="G$1" pin="RS" pad="P$8"/>
+<connect gate="G$1" pin="VCC" pad="P$3"/>
+<connect gate="G$1" pin="VREF" pad="P$5"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
