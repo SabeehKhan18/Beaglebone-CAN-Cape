@@ -3,7 +3,7 @@ Simple CAN cape for the Beaglebone Black
 
 This is a CAN transceiver evaluation board that can be used to develop a CAN bus or even to sniff a vehicle's CAN bus. By using an SOIC-8 breakout board, and adjusting the pin jumpers provided on the cape, any 3.3V or 5V SOIC-8 CAN transceiver can be tested.
 ## WARNING ##
-Accessing your vehicles CAN bus can be a dangerous endeavor. Reading the bus is typically not a problem, however sending messages can disrupt the operation of the vehicle, cause trouble codes, and potentially lead to undesired operation of the vehicle, up to and including moving under its own discretion. Needless to say, this can FATALLY INJURE YOU, so be careful. We are not responsible for any outcomes that the use of the provided hardware design or software may cause. There is no warranty.
+Accessing your vehicle's CAN bus can be a dangerous endeavor. Reading the bus is typically not a problem, however sending messages can disrupt the operation of the vehicle, cause trouble codes, and potentially lead to undesired operation of the vehicle, up to and including moving under its own discretion. Needless to say, this can FATALLY INJURE YOU, so be careful. We are not responsible for any outcomes that the use of the provided hardware design or software may cause. There is no warranty.
 
 ## Installation Instructions ##
 
@@ -54,6 +54,5 @@ The board can be printed by sending gerber files to a PCB fab company. I used th
 
 https://www.sparkfun.com/tutorials/115
 
-A list of components can be found in PartsList.ods.
+A list of components can be found in PartsList.ods. Feel free to modify the hardware design to accomodate any components you would like to use.
 
-* If there is extra hardware needed, include links to where it can be obtained. 
