@@ -1,8 +1,9 @@
 # Beaglebone CAN Cape
 Simple CAN cape for the Beaglebone Black
 
-Installation guide:
-== Installation Instructions ==
+This is a CAN transceiver evaluation board that can be used to develop a CAN bus or even to sniff a vehicle's CAN bus. By using an SOIC-8 breakout board, and adjusting the pin jumpers provided on the cape, any 3.3V or 5V SOIC-8 CAN transceiver can be tested.
+
+## Installation Instructions ##
 
 The installation of this project is relatively simple. First, begin by cloning the github repository:
 
@@ -17,6 +18,7 @@ If you have not previously done the above, you will need to reboot after uncomme
 Next, run the installation script included in the repo. The installation script installs the linux package `can-utils` on the beaglebone. This package has the software necessary to make sense of the messages on the bus and provides a display interface:
 
 `beagle$ cd Beaglebone-CAN-cape/`
+
 `beagle$ ./install.sh`
 
 Then, be sure you are operating as root, and then source the setup script. This will configure the pin muxes for dcan1, which operates on P9_24 and P9_26. It also uses P8_13 to control the CAN transceiver STANDBY pin. Then it sets up the interface can1. You must provide the bitrate of the CAN bus as an argument, replacing `BITRATE` in the command below. If you are developing your own network, you should know this value as you should have selected it. If you are attempting to sniff a production vehicle, your best bet is to start with 500000, which is representative of 500 kbps. If this doesn`t work, try a google search to see if you can find the bitrate:
